@@ -7,7 +7,7 @@ import InitPage from './pages/InitPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<InitPage />} />
         <Route path="/home" element={<LandingPage />} />
