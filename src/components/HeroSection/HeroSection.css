@@ -1,0 +1,98 @@
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: var(--pad-md);
+}
+
+.hero-title-wrapper {
+    position: relative;
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+
+.hero-main h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: clamp(6rem, 18vw, 22rem);
+    line-height: 0.8;
+    color: var(--ink);
+    position: relative;
+    z-index: 2;
+    letter-spacing: -0.04em;
+    text-align: center;
+}
+
+/* Horizontal line through title */
+.title-line {
+    height: 2px;
+    background: var(--ink);
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.subtitle-pill-cluster {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: -2vw;
+    position: relative;
+    z-index: 3;
+    flex-wrap: wrap;
+}
+
+/* Data blocks */
+.data-block {
+    position: absolute;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    line-height: 1.4;
+    color: var(--ink);
+    max-width: 150px;
+}
+
+.data-tl {
+    top: 20%;
+    left: 5%;
+    text-align: left;
+}
+
+.data-tr {
+    top: 25%;
+    right: 5%;
+    text-align: right;
+}
+
+/* Star graphic */
+.star-graphic {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    right: -40px;
+}
+
+.star-graphic svg {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 1.5;
+}
+
+@media (max-width: 768px) {
+    .hero-main h1 {
+        font-size: 18vw;
+    }
+
+    .title-line {
+        display: none;
+    }
+
+    .data-block {
+        display: none;
+    }
+}

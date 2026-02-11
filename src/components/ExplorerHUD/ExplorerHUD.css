@@ -1,0 +1,50 @@
+.exploration-hud {
+    position: absolute;
+    bottom: var(--pad-xl);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.coord-readout {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 8px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.scanning-text {
+    color: var(--rust);
+}
+
+.nav-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-pill {
+    border: var(--border-width) solid var(--ink);
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background: var(--paper);
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: 'Syne', sans-serif;
+    color: var(--ink);
+}
+
+.nav-pill:hover {
+    background: var(--rust);
+    color: var(--paper);
+    border-color: var(--rust);
+}

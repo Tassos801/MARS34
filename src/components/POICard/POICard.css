@@ -1,0 +1,40 @@
+.poi-card {
+    border: var(--border-width) solid var(--ink);
+    padding: var(--pad-md);
+    background: var(--paper);
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.poi-card:hover,
+.poi-card.active {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.poi-card h3 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.poi-card p {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+
+.marker-btn {
+    padding: 4px 12px;
+    border: 1px solid currentColor;
+    font-size: 0.65rem;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+}

@@ -1,0 +1,31 @@
+.orbit-visual {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    border: 1px dashed rgba(18, 18, 18, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.mro-marker {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--rust);
+    border-radius: 2px;
+    offset-path: path('M 400,0 A 400,400 0 1,1 399.9,0 Z');
+    animation: orbit 20s linear infinite;
+}
+
+@keyframes orbit {
+    from {
+        offset-distance: 0%;
+    }
+
+    to {
+        offset-distance: 100%;
+    }
+}

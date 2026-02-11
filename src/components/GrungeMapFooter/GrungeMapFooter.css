@@ -1,0 +1,73 @@
+.grunge-map {
+    width: 100%;
+    height: 25vh;
+    background-color: var(--rust);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: var(--pad-md);
+    border-top: var(--border-width) solid var(--ink);
+    margin-top: auto;
+}
+
+.map-texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--terra-green);
+    clip-path: polygon(0% 0%, 15% 10%, 25% 5%, 40% 25%,
+            35% 50%, 50% 60%, 60% 45%, 75% 55%,
+            85% 30%, 100% 40%, 100% 100%, 0% 100%);
+    opacity: 0.9;
+}
+
+.map-texture-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--ink);
+    opacity: 0.1;
+    filter: url('#noise');
+    mix-blend-mode: overlay;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--paper);
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.coordinate-circle {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--paper);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-15deg);
+}
+
+.line-graphic {
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    .grunge-map {
+        height: 15vh;
+    }
+}

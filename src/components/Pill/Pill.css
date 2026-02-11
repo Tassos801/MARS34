@@ -1,0 +1,29 @@
+.pill {
+    border: var(--border-width) solid var(--ink);
+    padding: 4px 16px;
+    border-radius: 50px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    background: var(--paper);
+    color: var(--ink);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.pill:hover {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.pill.accent {
+    border-color: var(--rust);
+    color: var(--rust);
+}
+
+.pill.accent:hover {
+    background: var(--rust);
+    color: var(--paper);
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Syne:wght@400;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --paper: #E6E2D6;
+  --ink: #121212;
+  --rust: #C85228;
+  --terra-green: #2A5A42;
+  --sun-gold: #D4A044;
+
+  --pad-sm: 12px;
+  --pad-md: 24px;
+  --pad-lg: 48px;
+  --pad-xl: 96px;
+
+  --border-width: 1.5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: 'Syne', sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pointer-events strategy */
+button, a, .interactive {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.ui-layer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  pointer-events: none;
+}

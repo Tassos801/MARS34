@@ -1,0 +1,36 @@
+.location-layout {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.viz-container {
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    border-right: var(--border-width) solid var(--ink);
+    overflow: hidden;
+}
+
+.overlay-elements {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    padding: 40px;
+    z-index: 10;
+}
+
+.loc-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px;
+    border: var(--border-width) solid var(--ink);
+    background: var(--paper);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    pointer-events: auto;
+}

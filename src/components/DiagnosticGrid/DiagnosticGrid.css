@@ -1,0 +1,28 @@
+.diagnostic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 4rem;
+    text-align: left;
+}
+
+.diag-item {
+    border-top: var(--border-width) solid var(--ink);
+    padding-top: 12px;
+}
+
+.diag-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--rust);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.diag-value {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}

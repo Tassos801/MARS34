@@ -1,0 +1,17 @@
+.site-header {
+    padding: var(--pad-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+    font-family: 'Space Mono', monospace;
+    border-bottom: 0px solid transparent;
+}
+
+.brand-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}

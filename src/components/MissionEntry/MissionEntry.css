@@ -1,0 +1,26 @@
+.mission-entry {
+    margin-bottom: 24px;
+    padding-left: 20px;
+    border-left: 2px solid var(--rust);
+}
+
+.mission-year {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--rust);
+}
+
+.mission-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    display: block;
+    margin: 4px 0;
+}
+
+.mission-desc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}

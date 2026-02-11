@@ -1,0 +1,169 @@
+.about-layout {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--paper);
+}
+
+/* Globe sits behind everything at 0.6 opacity, matching original design */
+.about-globe-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.about-ui-overlay {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: var(--pad-lg);
+    pointer-events: none;
+}
+
+/* ── Header ── */
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-brand-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    border: var(--border-width) solid var(--ink);
+    background: var(--paper);
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    pointer-events: auto;
+}
+
+.about-brand-pill.interactive {
+    cursor: pointer;
+}
+
+.about-brand-pill.interactive:hover {
+    color: var(--rust);
+    border-color: var(--rust);
+}
+
+/* ── Main content ── */
+.about-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-init-title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 6rem;
+    line-height: 0.85;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* ── Progress bar ── */
+.about-progress-section {
+    width: 500px;
+    pointer-events: auto;
+}
+
+.about-progress-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.about-loading-text.done {
+    color: var(--terra-green);
+}
+
+.about-progress-bar-container {
+    width: 100%;
+    height: 4px;
+    background: rgba(18, 18, 18, 0.1);
+    margin: 16px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-progress-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--ink);
+    transition: width 0.1s linear;
+}
+
+/* ── Diagnostic grid ── */
+.about-diagnostic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 4rem;
+    text-align: left;
+}
+
+.about-diag-item {
+    border-top: var(--border-width) solid var(--ink);
+    padding-top: 12px;
+}
+
+.about-diag-label {
+    font-size: 0.65rem;
+    color: var(--rust);
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+.about-diag-value {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+}
+
+/* ── Footer ── */
+.about-footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .about-init-title {
+        font-size: 3.5rem;
+    }
+
+    .about-diagnostic-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .about-ui-overlay {
+        padding: var(--pad-md);
+    }
+
+    .about-progress-section {
+        width: 100%;
+    }
+}

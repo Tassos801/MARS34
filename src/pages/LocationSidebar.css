@@ -1,0 +1,99 @@
+.details-sidebar {
+    width: 440px;
+    min-width: 440px;
+    height: 100vh;
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative;
+    z-index: 20;
+}
+
+.sidebar-header {
+    padding: 60px 40px 40px 40px;
+    border-bottom: var(--border-width) solid var(--ink);
+}
+
+.loc-title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 3.5rem;
+    line-height: 0.9;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.loc-meta {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--rust);
+}
+
+.section-block {
+    padding: 40px;
+    border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+}
+
+.section-block.no-border {
+    border-bottom: none;
+}
+
+.section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 24px;
+    display: block;
+    opacity: 0.5;
+}
+
+.loc-stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.loc-stat-item .val {
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.8rem;
+    display: block;
+}
+
+.loc-stat-item .lbl {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.history-timeline {
+    position: relative;
+}
+
+.btn-return {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 12px 24px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btn-return:hover {
+    background: var(--rust);
+}
+
+.geo-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.7;
+}

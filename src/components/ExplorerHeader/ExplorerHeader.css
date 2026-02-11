@@ -1,0 +1,25 @@
+.explorer-header {
+    padding: var(--pad-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.explorer-brand-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    border: var(--border-width) solid var(--ink);
+    background: var(--paper);
+}
+
+.explorer-header-right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
